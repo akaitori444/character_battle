@@ -26,7 +26,7 @@
         <div class="title">バトルコロシアム</div>
       </div>
     </div>
-    <a href="file_read.php">キャラクターリスト</a>
+    <a href="character_list.php">キャラクターリスト</a>
     <dvi>
       <form enctype="multipart/form-data" action="./file_upload.php" method="POST">
           <h1>キャラクター入力</h1>
