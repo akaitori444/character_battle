@@ -78,7 +78,7 @@ if($dice <= $pl_critical){
 if($_POST["battle_command"] == 0){
   $enemy_hp = $enemy_hp_set;
   $pl_hp = $pl_hp_set;
-  $msg = '敵が現れた';
+  $msg = 'バトル開始だ！';
   $msg1 = '行動選択して戦おう';
 }elseif($_POST["battle_command"] == 1){ //近接攻撃
   if($attack_result == 1){
@@ -156,7 +156,13 @@ if($enemy_hp > 0){
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>戦闘画面</title>
   <link rel="icon" href="assets/favicon.ico.png">
+  <!--jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <!--CSS-->
+  <!--リセットCSS-->
+  <link rel="canonical" href="#">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="stylesheet" type="text/css" href="css/reset.css"/>
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 
@@ -227,7 +233,6 @@ if($enemy_hp > 0){
     <div class="gm_information">
       <div class="main_window">
         <div>戦闘画面</div>
-
         <!--敵画面-->
         <div class="straight_line">
           <div class="battlefield">
@@ -258,7 +263,6 @@ if($enemy_hp > 0){
         <div>メッセージ</div>
         <div><?=$msg?></div>
         <div><?=$msg1?></div>
-
       </div>    
     </div>
   </div>

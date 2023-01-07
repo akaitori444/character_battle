@@ -17,7 +17,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>キャラクター入力画面</title>
     <link rel="icon" href="assets/favicon.ico.png">
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!--CSS-->
+    <!--リセットCSS-->
+    <link rel="canonical" href="#">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
   </head>
   <body>
@@ -27,14 +33,14 @@
       </div>
     </div>
     <a href="character_list.php">キャラクターリスト</a>
-    <dvi>
+    <dvi class="straight_line">
       <form enctype="multipart/form-data" action="./file_upload.php" method="POST">
           <h1>キャラクター入力</h1>
           <p>あなたのキャラクターデータを入力してください</p>
           <div>
             名前: <input type="text" name="name">
           </div>
-          <h1>イメージ</h1>
+          <h1 class="margin_top">イメージ</h1>
           <p>キャラクターの画像を入力してください</p>
           <div class="file-up">
             <input type="hidden" name="MAX_FILE_SIZE" value="1048576" />
